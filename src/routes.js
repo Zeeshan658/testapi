@@ -3,7 +3,7 @@
 let Joi = require('joi');
 //let authController = require('./controllers/authcontroller');
 //let profileController = require('./controllers/profilecontroller');
-let userController = require('./controllers/usercontroller');
+let userController = require('./controllers/userController');
 
 module.exports = [
     {
