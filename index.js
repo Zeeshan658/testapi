@@ -31,7 +31,7 @@ const server = new Hapi.Server({
     }
 });
 server.connection({
-    host: "https://fast-temple-14840.herokuapp.com/",
+    //host: "localhost",
     port: process.env.PORT || 3000,
     routes: {
         cors: true,
