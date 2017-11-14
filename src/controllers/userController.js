@@ -1,6 +1,6 @@
 var fs = require('fs');
 const uuidv1 = require('uuid/v1');
-var Users = require("../models/usermodel");
+var Users = require("../models/userModel");
 
 var users = new Users();
 var UsersController = {};

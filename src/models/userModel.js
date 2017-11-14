@@ -1,6 +1,6 @@
 'use strict';
-let Command = require("./commandmodel");
-let db = require("../database/adomanager");
+let Command = require("./commandModel");
+let db = require("../database/ADOManager");
 const config = require('../config/setting');
 class User {
     constructor() {

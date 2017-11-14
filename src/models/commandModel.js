@@ -1,5 +1,5 @@
 ﻿"use strict";
-let Parameters = require("./parametersmodel");
+let Parameters = require("./parametersModel");
 let _cmdText = new WeakMap();
 let _cmdType = new WeakMap();
 class Command {
