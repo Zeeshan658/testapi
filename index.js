@@ -5,15 +5,15 @@ var fs = require('fs');
 let _ = require("underscore");
 var path = require('path');
 var inert=require('inert');
-let dirName = path.join(__dirname, "/log/info");
-if (!fs.existsSync(dirName)) {
-    fs.mkdir(dirName);
-}
+// let dirName = path.join(__dirname, "/log/info");
+// if (!fs.existsSync(dirName)) {
+    // fs.mkdir(dirName);
+// }
 
-dirName = path.join(__dirname, "/log/error");
-if (!fs.existsSync(dirName)) {
-    fs.mkdir(dirName);
-}
+// dirName = path.join(__dirname, "/log/error");
+// if (!fs.existsSync(dirName)) {
+    // fs.mkdir(dirName);
+// }
 var winston = require('winston'); require('winston-daily-rotate-file');
 var transport = new winston.transports.DailyRotateFile({
     filename: path.join(__dirname, '/log/info/info.log'),
@@ -74,7 +74,7 @@ server.start(function () {
     console.log(`Server running at: ${server.info.uri}`);
 });
 server.on('response', function (request) {
-    logger.log('info', request.info.remoteAddress + ': ' + request.method.toUpperCase() + ' ' + request.url.path + ' --> ' + request.response.statusCode);
+   // logger.log('info', request.info.remoteAddress + ': ' + request.method.toUpperCase() + ' ' + request.url.path + ' --> ' + request.response.statusCode);
     console.log(request.info.remoteAddress + ': ' + request.method.toUpperCase() + ' ' + request.url.path + ' --> ' + request.response.statusCode);
 });
 server.on('request-error', function (request, err) {
